@@ -1,10 +1,10 @@
-import VideoThumb from "@/public/images/hero-image-01.jpg";
+import VideoThumb from "@/public/images/profile.png";
 import ModalVideo from "@/components/modal-video";
 
-export default function HeroHome() {
+export default function profile() {
   return (
     <section>
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="mx-auto max-w-md px-4 sm:px-6">
         {/* Hero content */}
         <div className="py-12 md:py-20">
           {/* Section header */}
@@ -13,7 +13,7 @@ export default function HeroHome() {
               className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl"
               data-aos="fade-up"
             >
-              AI-driven tools for product teams
+              My Portfolio
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -21,8 +21,8 @@ export default function HeroHome() {
                 data-aos="fade-up"
                 data-aos-delay={200}
               >
-                Our landing page template works on all devices, so you only have
-                to set it up once, and get beautiful results forever.
+                Gabriel Gerardo Alvarado Vargas 
+                Here you can find all the information about me and engage with my projects.
               </p>
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                 <div data-aos="fade-up" data-aos-delay={400}>
