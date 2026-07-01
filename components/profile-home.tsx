@@ -9,22 +9,16 @@ export default function profile() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="pb-12 text-center md:pb-20">
-            <h1
-              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl"
-              data-aos="fade-up"
-            >
-              My Portfolio
-            </h1>
             <div className="mx-auto max-w-3xl">
               <p
                 className="mb-8 text-xl text-indigo-200/65"
                 data-aos="fade-up"
                 data-aos-delay={200}
               >
-                Gabriel Gerardo Alvarado Vargas 
-                Here you can find all the information about me and engage with my projects.
+                Hi, I'm Gabriel Gerardo Alvarado Vargas, here you can find all the information about me and engage with my projects.
               </p>
-              <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
+
+              {/* <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                 <div data-aos="fade-up" data-aos-delay={400}>
                   <a
                     className="btn group mb-4 w-full bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
@@ -37,28 +31,27 @@ export default function profile() {
                       </span>
                     </span>
                   </a>
-                </div>
-                <div data-aos="fade-up" data-aos-delay={600}>
-                  <a
-                    className="btn relative w-full bg-linear-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] text-gray-300 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-[length:100%_150%] sm:ml-4 sm:w-auto"
-                    href="#0"
-                  >
-                    Schedule Demo
-                  </a>
-                </div>
-              </div>
+                </div>                
+              </div> */}
+
             </div>
           </div>
 
-          <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={1104}
-            thumbHeight={576}
-            thumbAlt="Modal video thumbnail"
-            video="videos//video.mp4"
-            videoWidth={1920}
-            videoHeight={1080}
-          />
+          <div className="relative mx-auto w-full max-w-3xl">
+            <img
+              src={VideoThumb.src}
+              alt="Modal video thumbnail"
+              width={1104}
+              height={576}
+              className="w-full rounded-xl"
+              style={{
+                WebkitMaskImage:
+                  "radial-gradient(circle, black 70%, transparent 100%)",
+                maskImage:
+                  "radial-gradient(circle, black 70%, transparent 100%)",
+              }}
+            />
+          </div>
         </div>
       </div>
     </section>
